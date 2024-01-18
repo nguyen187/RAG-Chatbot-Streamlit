@@ -1,17 +1,13 @@
 import sys
 import os
-import logging
-import random
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stdin.reconfigure(encoding="utf-8")
 
-import streamlit.components.v1 as components
 
 import streamlit as st
 
 import openai
-from llama_index.llms import AzureOpenAI
 
 from llama_index import (
     ServiceContext,
