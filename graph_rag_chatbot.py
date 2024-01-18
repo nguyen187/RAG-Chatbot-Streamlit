@@ -29,8 +29,7 @@ from llama_index.memory import ChatMemoryBuffer
 from langchain.embeddings import HuggingFaceEmbeddings
 from llama_index import ServiceContext, set_global_service_context
 
-openai.api_key = "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"
-
+openai.api_key = st.secrets.openai_key
 llm = OpenAI(
     temperature=0,
     model="gpt-3.5-turbo",
